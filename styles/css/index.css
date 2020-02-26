@@ -4,20 +4,34 @@ body {
   font-weight: 200;
   font-family: 'Poppins';
   background-color: #fafafa;
-  color: #4c4e61; }
+  color: #a3a5ae; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+  .attribution a {
+    color: #3e52a3; }
 
 h1 {
   font-weight: 200;
   font-size: 1.9em;
+  color: #4c4e61;
   text-align: center; }
   h1 span {
     display: block; }
   h1 strong {
     font-weight: 600; }
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 2.5em; } }
 
 .subheading {
   text-align: center;
   color: #a3a5ae; }
+  @media screen and (min-width: 1024px) {
+    .subheading {
+      width: 35vw;
+      margin: auto; } }
 
 .card {
   height: 13.33333333333333em;
@@ -33,6 +47,7 @@ h1 {
     color: #a3a5ae;
     margin-top: 0; }
   .card h2 {
+    color: #4c4e61;
     margin-bottom: .28em;
     /* 4.2px/15px */
     font-weight: 600; }
@@ -47,9 +62,9 @@ h1 {
   .card .img-holder {
     display: flex;
     justify-content: flex-end; }
-
-.attribution {
-  font-size: 11px;
-  text-align: center; }
-  .attribution a {
-    color: #3e52a3; }
+  @media screen and (min-width: 1440px) {
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 350px; } }

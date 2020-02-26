@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+$background-color: hsl(0, 0%, 98%);
+$default-text-color: hsl(229, 6%, 66%);
+$heading-color: hsl(234, 12%, 34%);
+
+
 body{
     font: {
         size: 15px;
         weight: 200;
         family:'Poppins';
     }
-    background-color: hsl(0, 0%, 98%);
-    color: hsl(234, 12%, 34%);
+    background-color: $background-color;
+    color: $default-text-color;
 }
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+
+    a{
+        color: hsl(228, 45%, 44%);
+    }
+}
+
 h1{
     font: {
         weight: 200;
         size: 1.9em;
     }
+    color: $heading-color;
     text-align: center;
     span{
         display: block;
@@ -21,17 +37,28 @@ h1{
     strong{
         font-weight: 600;
     }
+
+    @media screen and (min-width:1024px){
+        font-size: 2.5em;
+    }
 }
+
 .subheading{
     text-align: center;
-    color: hsl(229, 6%, 66%);
+    color: $default-text-color;
+
+    @media screen and (min-width:1024px){
+        width: 35vw;
+        margin: auto;
+    }
 }
+
 .card{
     height: 13.33333333333333em;/* 200px/15px */
     background-color: white;
     border-radius: 5px;
     border-top: 5px solid;
-    box-shadow: 0 5px 20px rgba(163, 165, 174, .5) ;
+    box-shadow: 0 5px 20px hsla(229, 6%, 66%, 0.5) ;
     padding: 0 30px 30px 30px;
     margin-top:2em; /* 30px/15px */
     p{
@@ -39,6 +66,7 @@ h1{
         margin-top:0;
     }
     h2{
+        color: $heading-color;
         margin-bottom: .28em;/* 4.2px/15px */
         font-weight: 600;
     }
@@ -58,12 +86,11 @@ h1{
         display: flex;
         justify-content: flex-end;
     }
-}
-.attribution{
-    font-size: 11px;
-    text-align: center;
 
-    a{
-        color: hsl(228, 45%, 44%);
+    @media screen and (min-width:1440px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:350px;
     }
 }
