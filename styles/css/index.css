@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: 'Poppins';
+  background-color: #fafafa;
+  color: #4c4e61; }
+
+h1 {
+  font-weight: 200;
+  font-size: 1.9em;
+  text-align: center; }
+  h1 span {
+    display: block; }
+  h1 strong {
+    font-weight: 600; }
+
+.subheading {
+  text-align: center;
+  color: #a3a5ae; }
+
+.card {
+  height: 13.33333333333333em;
+  /* 200px/15px */
+  background-color: white;
+  border-radius: 5px;
+  border-top: 5px solid;
+  box-shadow: 0 5px 20px rgba(163, 165, 174, 0.5);
+  padding: 0 30px 30px 30px;
+  margin-top: 2em;
+  /* 30px/15px */ }
+  .card p {
+    color: #a3a5ae;
+    margin-top: 0; }
+  .card h2 {
+    margin-bottom: .28em;
+    /* 4.2px/15px */
+    font-weight: 600; }
+  .card#supervisor {
+    border-top-color: #45d3d3; }
+  .card#team-builder {
+    border-top-color: #ea5353; }
+  .card#karma {
+    border-top-color: #fcaf4a; }
+  .card#calculator {
+    border-top-color: #549ef2; }
+  .card .img-holder {
+    display: flex;
+    justify-content: flex-end; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+  .attribution a {
+    color: #3e52a3; }
