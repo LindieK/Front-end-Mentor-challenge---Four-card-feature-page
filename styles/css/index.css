@@ -34,7 +34,7 @@ h1 {
   border-radius: 5px;
   border-top: 5px solid;
   box-shadow: 0 5px 20px rgba(163, 165, 174, 0.5);
-  padding: 5px 30px 30px 30px;
+  padding: 10px 30px 30px 30px;
   margin-top: 1em; /* 15px/15px */ 
 }
   .card p {
